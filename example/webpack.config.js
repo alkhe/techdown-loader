@@ -12,7 +12,7 @@ module.exports = {
       {
         test: /\.md$/,
         use: {
-          loader: '../loader.js',
+          loader: '..',
           options: {
             nomnoml_prelude: '#font: Menlo'
           }
