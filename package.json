@@ -7,10 +7,12 @@
   "license": "MIT",
   "dependencies": {
     "loader-utils": "^2.0.0",
-    "schema-utils": "^2.7.0",
-    "techdown": "^1.2.0"
+    "schema-utils": "^2.7.0"
   },
   "devDependencies": {
     "webpack": "^4.43.0"
+  },
+  "peerDependencies": {
+    "techdown": "^1.2.0"
   }
 }
