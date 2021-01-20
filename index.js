@@ -1,5 +1,5 @@
 const { getOptions } = require('loader-utils')
-const validateOptions = require('schema-utils')
+const { validate } = require('schema-utils')
 const techdown = require('techdown')
 
 const schema = {
@@ -17,7 +17,7 @@ const schema = {
 module.exports = function(source) {
   const options = getOptions(this)
 
-  validateOptions(schema, options, 'techdown loader')
+  validate(schema, options, 'techdown loader')
 
   return techdown(options)(source)
 }
